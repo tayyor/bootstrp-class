@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+:root {
+  --colorTheme: #00bf85;
+  --colorWhite: #f7f5f4;
+}
+.navbar {
+  background: #131313;
+  padding: 1rem, 8rem;
+  z-index: 1;
+}
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{ 
+  color: var(--colorTheme);
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:active{ 
+  color: var(--colorTheme);
+}
+#navbarSupportedContent > button {
+  background: var(--colorTheme);
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+}
+.mid {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.mid video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero {
+  position: relative;
+}
+.mid .hero p {
+  width: 55%;
+  font-size: 1.1rem;
+  letter-spacing: 0.2px;
+  padding-bottom: 1rem;
+}
+.mid .hero a {
+  background: var(--colorTheme);
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.mid .hero a:hover{
+  background: #fff;
+}
+/* about section */
+.about{
+  background: #000;
+}
+.about .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+  }
+.about .text h6{
+  color: var(--colorTheme) ;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.about .text h2{
+  color: var(--colorWhite) ;
+  font-weight: 700;
+  font-size: 2.7rem;
+ }
+.about .text p{
+  color: var(--colorWhite) ;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing:0.5px ;
+ }
+.about .text a{
+  background: var(--colorTheme);
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #111;
+ }
+/* discovery  section */
+.discovery .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+  }
+.discovery .text h6{
+  color: var(--colorTheme) ;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.discovery .text h2{
+  color: #111;
+  font-weight: 700;
+  font-size: 2.7rem;
+ }
+.discovery .text p{
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing:0.5px ;
+ }
+.discovery .text a{
+  background: #000;
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color:var(--colorTheme);
+ }
+ .service{
+   background: #000;
+ }
+ .service .one{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem 1.5rem;
+    border-radius: 7%;
+ }
+ /* SignUp section */
+
+.Signup .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+  }
+.Signup .text h6{
+  color: var(--colorTheme) ;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.Signup .text h2{
+  color: #111 ;
+  font-weight: 700;
+  font-size: 2.7rem;
+ }
+.Signup .text p{
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing:0.5px ;
+ }
+.Signup .text a{
+  background: #000;
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color:var(--colorTheme);
+ }
+ body > footer{
+   background: #111!important;
+ }
+ body > footer > ul.list-unstyled.list-inline.text-center.py-2 > li:nth-child(2) > a{
+  background: var(--colorTheme);
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+  border: none;
+ }
+ @media screen and (max-width:988px){
+  .navbar {
+    padding: 0;
+  }
+  #navbarSupportedContent > ul{
+    padding-left: 0;
+  }
+  #navbarSupportedContent > ul >li:nth-child(n) >a{
+    padding:0.5rem;
+  }
+ }
+ 
